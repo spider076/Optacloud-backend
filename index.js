@@ -5,6 +5,7 @@ const addressRoutes = require("./routes/address");
 require("dotenv").config();
 
 const app = express();
+app.use(require("cors")());
 
 connectDB();
 
